@@ -14,14 +14,14 @@ int main()
         if ((x%CYCLE)*2/CYCLE)
             for (j=0; j<WIDTH; j++)
                 if ((j%CYCLE)*2/CYCLE)
-					printf(STAR);
-                else
 					printf(SPACE);
+                else
+					printf(STAR);
 		else
 			for (j=0; j<WIDTH; j++)
 				if ((j%CYCLE)*2/CYCLE)
-					printf(STAR);
-				else
 					printf(SPACE);
+				else
+					printf(STAR);
 	
 }
