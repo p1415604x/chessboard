@@ -1,26 +1,27 @@
 #include <stdio.h>
 #define DEPTH 64
 #define WIDTH 64
-#define CYCLE  10
-#define STAR  "*"
+#define CYCLE  8
+#define STAR  "$"
 #define SPACE " "
 #define NL    "\n"
 
 int main()
 {
-    int i,j;
+    int x,j;
 	
-    for (i=0; i<DEPTH; printf(NL),i++)
-        if ((i%CYCLE)*2/CYCLE)
+    for (x=0; x<DEPTH; printf(NL),x++)
+        if ((x%CYCLE)*2/CYCLE)
             for (j=0; j<WIDTH; j++)
                 if ((j%CYCLE)*2/CYCLE)
-					printf(SPACE);
-                else
 					printf(STAR);
+                else
+					printf(SPACE);
 		else
 			for (j=0; j<WIDTH; j++)
 				if ((j%CYCLE)*2/CYCLE)
-					printf(SPACE);
-				else
 					printf(STAR);
+				else
+					printf(SPACE);
+	
 }
